@@ -1,0 +1,7 @@
+# include "../inc/diplom.h"
+
+int main(void)
+{
+	printf("BLYAT\n");
+	return (0);
+}

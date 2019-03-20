@@ -1,0 +1,27 @@
+#ifndef DIPLOM_H
+# define DIPLOM_H
+# include <stdio.h>
+# include <stdlib.h>
+# include <math.h>
+# include "../lib/libft/includes/libft.h"
+# include "../minilibx/mlx.h"
+
+typedef struct s_dot
+{
+    double x;
+	double y;
+	double z;
+
+}				t_dot
+
+
+typedef struct s_project
+{
+	void *mlx_ptr;
+	void *win_ptr;
+	void *image_ptr;
+	t_dot *dot;
+
+}				t_project 
+
+#endif
