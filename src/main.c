@@ -16,25 +16,29 @@ void ft_matrix_x(t_project *project, int key)
 	while (++i < 8)
 	{
 		///cube
-		project->cube->arr_x[i] -= 600;
-		project->cube->arr_y[i] -= 600;
-		project->cube->arr_z[i] -= 300;
+		project->cube->arr_x[i] -= 300;
+		project->cube->arr_y[i] -= 300;
+		project->cube->arr_z[i] -= 150;
 		project->cube->new_arr_x[i] = project->cube->arr_x[i];
 		project->cube->new_arr_y[i] = project->cube->arr_y[i] * cos(project->angle) + project->cube->arr_z[i] * sin(project->angle);
 		project->cube->new_arr_z[i] = -project->cube->arr_y[i] * sin(project->angle) + project->cube->arr_z[i] * cos(project->angle);
-		project->cube->arr_x[i] = project->cube->new_arr_x[i] + 600;
-		project->cube->arr_y[i] = project->cube->new_arr_y[i] + 600;
-		project->cube->arr_z[i] = project->cube->new_arr_z[i] + 300;
-		//dots
-		project->dot->arr_x[i] -= 600;
-		project->dot->arr_y[i] -= 600;
-		project->dot->arr_z[i] -= 300;
+		project->cube->arr_x[i] = project->cube->new_arr_x[i] + 300;
+		project->cube->arr_y[i] = project->cube->new_arr_y[i] + 300;
+		project->cube->arr_z[i] = project->cube->new_arr_z[i] + 150;
+	}
+	i = -1;
+	while (++i < 5981)
+	{
+			//dots
+		project->dot->arr_x[i] -= 300;
+		project->dot->arr_y[i] -= 300;
+		project->dot->arr_z[i] -= 150;
 		project->dot->new_arr_x[i] = project->dot->arr_x[i];
 		project->dot->new_arr_y[i] = project->dot->arr_y[i] * cos(project->angle) + project->dot->arr_z[i] * sin(project->angle);
 		project->dot->new_arr_z[i] = -project->dot->arr_y[i] * sin(project->angle) + project->dot->arr_z[i] * cos(project->angle);
-		project->dot->arr_x[i] = project->dot->new_arr_x[i] + 600;
-		project->dot->arr_y[i] = project->dot->new_arr_y[i] + 600;
-		project->dot->arr_z[i] = project->dot->new_arr_z[i] + 300;
+		project->dot->arr_x[i] = project->dot->new_arr_x[i] + 300;
+		project->dot->arr_y[i] = project->dot->new_arr_y[i] + 300;
+		project->dot->arr_z[i] = project->dot->new_arr_z[i] + 150;
 	}
 }
 
@@ -49,25 +53,28 @@ void ft_matrix_y(t_project *project, int key)
 	while (++i < 8)
 	{
 		//cube
-		project->cube->arr_x[i] -= 600;
-		project->cube->arr_y[i] -= 600;
-		project->cube->arr_z[i] -= 300;
+		project->cube->arr_x[i] -= 300;
+		project->cube->arr_y[i] -= 300;
+		project->cube->arr_z[i] -= 150;
 		project->cube->new_arr_x[i] = project->cube->arr_x[i] * cos(project->angle) + project->cube->arr_z[i] * sin(project->angle);
 		project->cube->new_arr_y[i] = project->cube->arr_y[i];
 		project->cube->new_arr_z[i] = -project->cube->arr_x[i] * sin(project->angle) + project->cube->arr_z[i] * cos(project->angle);
-		project->cube->arr_x[i] = project->cube->new_arr_x[i] + 600;
-		project->cube->arr_y[i] = project->cube->new_arr_y[i] + 600;
-		project->cube->arr_z[i] = project->cube->new_arr_z[i] + 300;
-		//dots
-		project->dot->arr_x[i] -= 600;
-		project->dot->arr_y[i] -= 600;
-		project->dot->arr_z[i] -= 300;
+		project->cube->arr_x[i] = project->cube->new_arr_x[i] + 300;
+		project->cube->arr_y[i] = project->cube->new_arr_y[i] + 300;
+		project->cube->arr_z[i] = project->cube->new_arr_z[i] + 150;
+	}
+	i = -1;
+	while (++i < 5981)
+	{
+		project->dot->arr_x[i] -= 300;
+		project->dot->arr_y[i] -= 300;
+		project->dot->arr_z[i] -= 150;
 		project->dot->new_arr_x[i] = project->dot->arr_x[i] * cos(project->angle) + project->dot->arr_z[i] * sin(project->angle);
 		project->dot->new_arr_y[i] = project->dot->arr_y[i];
 		project->dot->new_arr_z[i] = -project->dot->arr_x[i] * sin(project->angle) + project->dot->arr_z[i] * cos(project->angle);
-		project->dot->arr_x[i] = project->dot->new_arr_x[i] + 600;
-		project->dot->arr_y[i] = project->dot->new_arr_y[i] + 600;
-		project->dot->arr_z[i] = project->dot->new_arr_z[i] + 300;
+		project->dot->arr_x[i] = project->dot->new_arr_x[i] + 300;
+		project->dot->arr_y[i] = project->dot->new_arr_y[i] + 300;
+		project->dot->arr_z[i] = project->dot->new_arr_z[i] + 150;
 	}
 }
 
@@ -81,29 +88,32 @@ void ft_matrix_z(t_project *project, int key)
 	while (++i < 8)
 	{
 		//cube
-		project->cube->arr_x[i] -= 600;
-		project->cube->arr_y[i] -= 600;
-		project->cube->arr_z[i] -= 300;
+		project->cube->arr_x[i] -= 300;
+		project->cube->arr_y[i] -= 300;
+		project->cube->arr_z[i] -= 150;
 
 		project->cube->new_arr_x[i] = project->cube->arr_x[i] * cos(project->angle) + project->cube->arr_y[i] * sin(project->angle);
 		project->cube->new_arr_y[i] = -project->cube->arr_x[i] * sin(project->angle) + project->cube->arr_y[i] * cos(project->angle);
 		project->cube->new_arr_z[i] = project->cube->arr_z[i];
 
-		project->cube->arr_x[i] = project->cube->new_arr_x[i] + 600;
-		project->cube->arr_y[i] = project->cube->new_arr_y[i] + 600;
-		project->cube->arr_z[i] = project->cube->new_arr_z[i] + 300;
-		//dots
-		project->dot->arr_x[i] -= 600;
-		project->dot->arr_y[i] -= 600;
-		project->dot->arr_z[i] -= 300;
+		project->cube->arr_x[i] = project->cube->new_arr_x[i] + 300;
+		project->cube->arr_y[i] = project->cube->new_arr_y[i] + 300;
+		project->cube->arr_z[i] = project->cube->new_arr_z[i] + 150;
+	}
+	i = -1;
+	while (++i < 5981)
+	{
+		project->dot->arr_x[i] -= 300;
+		project->dot->arr_y[i] -= 300;
+		project->dot->arr_z[i] -= 150;
 
 		project->dot->new_arr_x[i] = project->dot->arr_x[i] * cos(project->angle) + project->dot->arr_y[i] * sin(project->angle);
 		project->dot->new_arr_y[i] = -project->dot->arr_x[i] * sin(project->angle) + project->dot->arr_y[i] * cos(project->angle);
 		project->dot->new_arr_z[i] = project->dot->arr_z[i];
 
-		project->dot->arr_x[i] = project->dot->new_arr_x[i] + 600;
-		project->dot->arr_y[i] = project->dot->new_arr_y[i] + 600;
-		project->dot->arr_z[i] = project->dot->new_arr_z[i] + 300;
+		project->dot->arr_x[i] = project->dot->new_arr_x[i] + 300;
+		project->dot->arr_y[i] = project->dot->new_arr_y[i] + 300;
+		project->dot->arr_z[i] = project->dot->new_arr_z[i] + 150;
 	}
 }
 
@@ -119,35 +129,35 @@ void ft_refresh(t_project *project)
 	project->begin_str_image = mlx_get_data_addr(project->image_ptr, &bits_per_pixel, &project->size_line, &endian);
 }
 
-void ft_start(t_project *project)
+void ft_start_again(t_project *project)
 {
-	project->angle = 0;
-	project->cube->arr_x[0] = 300;
-	project->cube->arr_x[1] = 900;
-	project->cube->arr_x[2] = 300;
-	project->cube->arr_x[3] = 900;
-	project->cube->arr_x[4] = 300;
-	project->cube->arr_x[5] = 900;
-	project->cube->arr_x[6] = 300;
-	project->cube->arr_x[7] = 900;
+	project->cube->arr_x[0] = 200;
+	project->cube->arr_x[1] = 500; //1000
+	project->cube->arr_x[2] = 200;
+	project->cube->arr_x[3] = 500;
+	project->cube->arr_x[4] = 200;
+	project->cube->arr_x[5] = 500;
+	project->cube->arr_x[6] = 200;
+	project->cube->arr_x[7] = 500;
 
-	project->cube->arr_y[0] = 300;
-	project->cube->arr_y[1] = 300;
-	project->cube->arr_y[2] = 900;
-	project->cube->arr_y[3] = 900;
-	project->cube->arr_y[4] = 300;
-	project->cube->arr_y[5] = 300;
-	project->cube->arr_y[6] = 900;
-	project->cube->arr_y[7] = 900;
+	project->cube->arr_y[0] = 200;
+	project->cube->arr_y[1] = 200;
+	project->cube->arr_y[2] = 500; //1000;
+	project->cube->arr_y[3] = 500;
+	project->cube->arr_y[4] = 200;
+	project->cube->arr_y[5] = 200;
+	project->cube->arr_y[6] = 500;
+	project->cube->arr_y[7] = 500;
 
 	project->cube->arr_z[0] = 0;
 	project->cube->arr_z[1] = 0;
 	project->cube->arr_z[2] = 0;
 	project->cube->arr_z[3] = 0;
-	project->cube->arr_z[4] = 600;
-	project->cube->arr_z[5] = 600;
-	project->cube->arr_z[6] = 600;
-	project->cube->arr_z[7] = 600;
+	project->cube->arr_z[4] = 300; //900
+	project->cube->arr_z[5] = 300;
+	project->cube->arr_z[6] = 300;
+	project->cube->arr_z[7] = 300;
+	ft_prepare_dots(project);
 }
 
 int ft_key_press(int key, t_project *project)
@@ -161,7 +171,7 @@ int ft_key_press(int key, t_project *project)
 	if (key == 83 || key == 85)
 		ft_matrix_z(project, key);
 	if (key == 51)
-		ft_start(project);
+		ft_start_again(project);
 	ft_refresh(project);
 	ft_main_draw(project);
 	return (0);
@@ -247,7 +257,7 @@ void ft_dots_on_screen(t_project *project)//////////////////////////////////////
 	int i;
 
 	i = -1;
-	while (++i < 1)
+	while (++i < 5891)
 	{
 		ft_pixel_to_image(project, project->dot->arr_x[i], project->dot->arr_y[i], 0x00FFFF);
 	}
@@ -270,39 +280,66 @@ void	ft_main_draw(t_project *project)
 
 void ft_prepare_cube(t_project *project)
 {
-	project->cube->arr_x[0] = 300;
-	project->cube->arr_x[1] = 900;
-	project->cube->arr_x[2] = 300;
-	project->cube->arr_x[3] = 900;
-	project->cube->arr_x[4] = 300;
-	project->cube->arr_x[5] = 900;
-	project->cube->arr_x[6] = 300;
-	project->cube->arr_x[7] = 900;
+	project->cube->arr_x[0] = 200;
+	project->cube->arr_x[1] = 500; //1000
+	project->cube->arr_x[2] = 200;
+	project->cube->arr_x[3] = 500;
+	project->cube->arr_x[4] = 200;
+	project->cube->arr_x[5] = 500;
+	project->cube->arr_x[6] = 200;
+	project->cube->arr_x[7] = 500;
 
-	project->cube->arr_y[0] = 300;
-	project->cube->arr_y[1] = 300;
-	project->cube->arr_y[2] = 900;
-	project->cube->arr_y[3] = 900;
-	project->cube->arr_y[4] = 300;
-	project->cube->arr_y[5] = 300;
-	project->cube->arr_y[6] = 900;
-	project->cube->arr_y[7] = 900;
+	project->cube->arr_y[0] = 200;
+	project->cube->arr_y[1] = 200;
+	project->cube->arr_y[2] = 500; //1000;
+	project->cube->arr_y[3] = 500;
+	project->cube->arr_y[4] = 200;
+	project->cube->arr_y[5] = 200;
+	project->cube->arr_y[6] = 500;
+	project->cube->arr_y[7] = 500;
 
 	project->cube->arr_z[0] = 0;
 	project->cube->arr_z[1] = 0;
 	project->cube->arr_z[2] = 0;
 	project->cube->arr_z[3] = 0;
-	project->cube->arr_z[4] = 600;
-	project->cube->arr_z[5] = 600;
-	project->cube->arr_z[6] = 600;
-	project->cube->arr_z[7] = 600;
+	project->cube->arr_z[4] = 300; //900
+	project->cube->arr_z[5] = 300;
+	project->cube->arr_z[6] = 300;
+	project->cube->arr_z[7] = 300;
 }
 
-void ft_prepare_dots(t_project *project)///////////////////////////////////////////////////////////////////
+void ft_prepare_dots(t_project *project)
 {
-	project->dot->arr_x[0] = 678;
-	project->dot->arr_y[0] = 356;
-	project->dot->arr_z[0] = 478;
+	int fd;
+
+	fd = open("./coord.txt", O_RDONLY);
+	char *line;
+	int i = 0;
+	char **mas;
+	while (get_next_line(fd, &line))
+	{
+		mas = ft_strsplit(line, ',');
+		project->dot->arr_x[i] = ft_atoi(mas[0]) + 350;
+		project->dot->arr_y[i] = ft_atoi(mas[1]) + 300;
+		project->dot->arr_z[i] = ft_atoi(mas[2]) + 50; // + 300
+		/*if (project->dot->arr_x[i] > project->max_x)
+			project->max_x = project->dot->arr_x[i];
+		if (project->dot->arr_y[i] > project->max_y)
+			project->max_y = project->dot->arr_y[i];
+		if (project->dot->arr_z[i] > project->max_z)
+			project->max_z = project->dot->arr_z[i];*/
+		free(mas[0]);
+		free(mas[1]);
+		free(mas[2]);
+		free(&mas);
+		free(line);
+		i++;
+	}
+	/*project->max_x += 50;
+	project->max_y += 50;
+	project->max_z += 50;
+	printf("%d , %d , %d \n", project->max_x, project->max_y, project->max_z);*/
+	close(fd);
 }
 
 void ft_prepare_program(t_project *project)
@@ -311,12 +348,15 @@ void ft_prepare_program(t_project *project)
 	int endian;
 
 	project->mlx_ptr = mlx_init();
-	project->win_ptr = mlx_new_window(project->mlx_ptr, 1920, 1080, "diplom");
-	project->image_ptr = mlx_new_image(project->mlx_ptr, 1920, 1080);
+	project->win_ptr = mlx_new_window(project->mlx_ptr, 1000, 600, "diplom");
+	project->image_ptr = mlx_new_image(project->mlx_ptr, 1000, 600);
 	project->begin_str_image = mlx_get_data_addr(project->image_ptr, &bits_per_pixel, &project->size_line, &endian);
 	ft_prepare_cube(project);
 	ft_prepare_dots(project);
 	project->angle = 0;
+	project->max_x = 0;
+	project->max_y = 0;
+	project->max_z = 0;
 }
 
 int main(void)

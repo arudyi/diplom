@@ -39,8 +39,12 @@ typedef struct s_project
 	double angle;
 	t_dot *dot;
 	t_cube *cube;
+	int max_x;
+	int max_y;
+	int max_z;
 
 }				t_project; 
 
 void	ft_main_draw(t_project *project);
+void ft_prepare_dots(t_project *project);
 #endif
