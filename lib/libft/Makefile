@@ -13,7 +13,7 @@
 NAME = libft.a
 OBJECTS = *.o
 FILES =  *.c
-FLAGS  = -Wall -Werror -Wextra
+FLAGS  = -g
 HEADER = includes
 
 all: $(NAME)

@@ -1,5 +1,6 @@
 # include "../inc/diplom.h"
 
+
 int ft_exit(t_project *project)
 {
 	exit(1);
@@ -11,7 +12,7 @@ void ft_matrix_x(t_project *project, int key)
 	int i;
 
 	i = -1;
-	project->angle = (key == 123) ? + 2 : - 2;
+	project->angle = (key == 65361) ? + 2 : - 2;
 	project->angle = project->angle / 180 * 3.14;
 	while (++i < 8)
 	{
@@ -48,7 +49,7 @@ void ft_matrix_y(t_project *project, int key)
 
 	i = -1;
 
-	project->angle = (key == 126) ? + 2 : - 2;
+	project->angle = (key == 65362) ? + 2 : - 2;
 	project->angle = project->angle / 180 * 3.14;
 	while (++i < 8)
 	{
@@ -83,7 +84,7 @@ void ft_matrix_z(t_project *project, int key)
 	int i;
 
 	i = -1;
-	project->angle = (key == 83) ? + 2 : - 2;
+	project->angle = (key == 65436) ? + 2 : - 2;
 	project->angle = project->angle / 180 * 3.14;
 	while (++i < 8)
 	{
@@ -162,15 +163,15 @@ void ft_start_again(t_project *project)
 
 int ft_key_press(int key, t_project *project)
 {
-	if (key == 53)
+	if (key == 65307)
 		exit(1);
-	if (key == 123 || key == 124)
+	if (key == 65361 || key == 65363)
 		ft_matrix_x(project, key);
-	if (key == 126 || key == 125)
+	if (key == 65362 || key == 65364)
 		ft_matrix_y(project, key);
-	if (key == 83 || key == 85)
+	if (key == 65436 || key == 65435)
 		ft_matrix_z(project, key);
-	if (key == 51)
+	if (key == 65288)
 		ft_start_again(project);
 	ft_refresh(project);
 	ft_main_draw(project);
@@ -331,7 +332,7 @@ void ft_prepare_dots(t_project *project)
 		free(mas[0]);
 		free(mas[1]);
 		free(mas[2]);
-		free(&mas);
+		//free(&mas);
 		free(line);
 		i++;
 	}

@@ -61,7 +61,7 @@ static	int	read_line(int fd, char **dep, char **line)
 int			get_next_line(int fd, char **line)
 {
 	char		*tmp;
-	static char	*dep[OPEN_MAX];
+	static char	*dep[3000];
 	int			count;
 	char		buf[BUFF_SIZE + 1];
 
